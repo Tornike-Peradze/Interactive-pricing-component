@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="reset-CSS-Styles" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <p class="subscription-suggestion">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </header>
+    <div class="card-container">
+      <div class="upper">
+        <p class="pageviews">100K Pageviews</p>
+        <div class="range-bar">
+          <input type="range" min="0" max="100" value="50" id="slider" />
+          <div id="selector">
+            <div class="selectBtn"></div>
+            <img
+              src="./images/icon-slider.svg"
+              alt="icon-slider"
+              class="icon-slider"
+            />
+          </div>
+          <div id="progressBar"></div>
+        </div>
+        <p class="monthly-payment">$16.00 <span class="month">/ month</span></p>
+      </div>
+      <div class="middle">
+        <p class="billing">Monthly Billing</p>
+        <input type="range" />
+        <p class="billing">Yearly Billing</p>
+        <p class="discount">-25%</p>
+      </div>
+      <div class="bottom">
+        <div class="package-suggestion">
+          <div class="package-subclass">
+            <img
+              src="./images/icon-check.svg"
+              alt="icon-check"
+              class="icon-check"
+            />
+            <p class="package-p">Unlimited websites</p>
+          </div>
+          <div class="package-subclass">
+            <img
+              src="./images/icon-check.svg"
+              alt="icon-check"
+              class="icon-check"
+            />
+            <p class="package-p">100% data ownership</p>
+          </div>
+          <div class="package-subclass">
+            <img
+              src="./images/icon-check.svg"
+              alt="icon-check"
+              class="icon-check"
+            />
+            <p class="package-p">Email reports</p>
+          </div>
+        </div>
+        <button class="start-trial">Start my trial</button>
+      </div>
+    </div>
+  </body>
+</html>

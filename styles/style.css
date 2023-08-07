@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-image: url(../images/bg-pattern.svg), url();
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: COLUMN;
+  justify-content: CENTER;
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center 25px;
+  background-size: 15%;
+  gap: 6.4rem;
+}
+
+/* 
+  Mobile Version
+*/
+
+/* Header Part */
+
+h1 {
+  color: #293356;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.subscription-suggestion {
+  color: #848ead;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 23px;
+}
+/* Article Part */
+
+.card-container {
+  background-color: white;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.15);
+}
+
+.pageviews {
+  color: #848ead;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1.714px;
+  text-transform: uppercase;
+  margin: 3.4rem 0 2.5rem;
+}
+
+.range-bar {
+  width: 70%;
+}
