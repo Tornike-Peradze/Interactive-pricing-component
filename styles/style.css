@@ -18,9 +18,11 @@ html {
 
 body {
   font-family: "Manrope", sans-serif;
-  background-image: url(../images/bg-pattern.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 60%;
+  background-image: url(../images/pattern-circles.svg),
+    url(../images/bg-pattern.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 146px, 100% 60%;
+  background-position: center 7px, 100% 0;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -36,10 +38,6 @@ body {
 /* Header Part */
 
 header {
-  background-image: url(../images/pattern-circles.svg);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center 40px;
   height: 21rem;
   display: flex;
   align-items: center;
@@ -72,9 +70,14 @@ h1 {
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.15);
+  margin-bottom: 0.5rem;
 }
 
 /* Upper part of Container */
+
+.upper {
+  width: 80%;
+}
 
 .pageviews {
   color: #848ead;
@@ -130,10 +133,22 @@ h1 {
   font-weight: 800;
   letter-spacing: -0.8px;
   margin: 4rem 0 3.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .month {
   color: #848ead;
   font-size: 14px;
   font-weight: 600;
+  margin-left: 5px;
+}
+
+/* Middle part of section */
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
 }
