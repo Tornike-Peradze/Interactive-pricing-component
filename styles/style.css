@@ -18,17 +18,16 @@ html {
 
 body {
   font-family: "Manrope", sans-serif;
-  background-image: url(../images/pattern-circles.svg),
-    url(../images/bg-pattern.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-size: 146px, 100% 60%;
-  background-position: center 7px, 100% 0;
+  background-image: url(../images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  background-position: 100% 0;
   height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 4.4rem;
+  gap: 1rem;
 }
 
 /* 
@@ -38,6 +37,9 @@ body {
 /* Header Part */
 
 header {
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   height: 21rem;
   display: flex;
   align-items: center;
@@ -59,6 +61,7 @@ h1 {
   font-weight: 600;
   line-height: 23px;
 }
+
 /* Container Part */
 
 .card-container {
@@ -153,7 +156,7 @@ h1 {
   justify-content: center;
   gap: 1.2rem;
   margin: 1.6rem 0 4.2rem;
-  width: 80%;
+  width: 100%;
 }
 
 .billing {
@@ -207,3 +210,92 @@ h1 {
 }
 
 /* Bottom part of section */
+
+.bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: #ecf0fb;
+  margin-bottom: 2.4rem;
+}
+
+.package-subclass {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 1.1rem;
+}
+
+.icon-check {
+  width: 6.949px;
+  height: 5.042px;
+}
+
+.package-p {
+  color: #848ead;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.start-trial {
+  width: 17rem;
+  height: 4.1rem;
+  border-radius: 20.5px;
+  background: #293356;
+  margin: 3.3rem 0;
+  color: #becdff;
+  text-align: center;
+  font-family: Manrope, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  border: none;
+}
+
+.start-trial:hover {
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 900px) {
+  .card-container {
+    width: 50%;
+  }
+
+  /* Upper part of Container */
+
+  .upper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5.7rem;
+  }
+
+  .pageviews {
+    order: -2;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+
+  .monthly-payment {
+    order: -1;
+    font-size: 40px;
+  }
+
+  .month {
+    font-size: 16px;
+  }
+}
