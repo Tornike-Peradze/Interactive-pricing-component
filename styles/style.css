@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
 
+:root {
+  --thumb-position: 50%;
+}
+
 *,
 *::after,
 *::before {
@@ -79,7 +83,7 @@ h1 {
   font-weight: 800;
   letter-spacing: 1.714px;
   text-transform: uppercase;
-  margin: 3.4rem 0 2.5rem;
+  margin: 3.4rem 0 4rem;
 }
 
 .slidercontainer {
@@ -99,9 +103,9 @@ h1 {
   background: linear-gradient(
     to right,
     rgb(164, 243, 235) 0%,
-    rgb(164, 243, 235) 53.125%,
-    rgb(236, 240, 251) 53.125%,
-    rgb(236, 240, 251)
+    rgb(164, 243, 235) var(--thumb-position),
+    rgb(236, 240, 251) var(--thumb-position),
+    rgb(236, 240, 251) 100%
   );
 }
 
@@ -109,7 +113,7 @@ h1 {
   -webkit-appearance: none;
   appearance: none;
   background: #10d8c4;
-  background-image: url(images/icon-slider.svg);
+  background-image: url(../images/icon-slider.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 40px;
@@ -117,4 +121,19 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+}
+
+.monthly-payment {
+  color: #293356;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  margin: 4rem 0 3.4rem;
+}
+
+.month {
+  color: #848ead;
+  font-size: 14px;
+  font-weight: 600;
 }
