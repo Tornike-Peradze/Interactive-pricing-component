@@ -150,5 +150,60 @@ h1 {
 .middle {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 1.2rem;
+  margin: 1.6rem 0 4.2rem;
+  width: 80%;
 }
+
+.billing {
+  color: #848ead;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 4.3rem;
+  height: 2.2rem;
+  background-color: #cfd8ef;
+  border-radius: 1.5rem;
+}
+
+.toggle:after {
+  content: "";
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background-color: white;
+  top: 4px;
+  left: 4px;
+  transition: all 0.5s;
+}
+
+.checkbox:checked + .toggle::after {
+  left: 2.5rem;
+}
+
+.checkbox:checked + .toggle {
+  background: #7aeadf;
+}
+.checkbox {
+  display: none;
+}
+
+.discount {
+  width: 41px;
+  height: 19px;
+  border-radius: 9.5px;
+  background: #feede8;
+  text-align: center;
+  color: #ff8d68;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* Bottom part of section */
