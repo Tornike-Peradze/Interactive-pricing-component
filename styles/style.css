@@ -201,6 +201,13 @@ h1 {
   display: none;
 }
 
+/* 
+        <div>
+          <input type="checkbox" id="switch"
+          class="checkbox" />
+          <label for="switch" class="toggle">
+        </div> */
+
 .discount {
   width: 41px;
   height: 19px;
