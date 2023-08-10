@@ -1,9 +1,7 @@
-let scrollBar = document.getElementById("input");
-let payment = document.querySelector(".dollar");
-let switchToMonthYear = document.querySelector(".month");
-let checkBox = document.getElementById("switch");
-
-let actualPayment = 16;
+const scrollBar = document.getElementById("input");
+const payment = document.querySelector(".dollar");
+const switchToMonthYear = document.querySelector(".month");
+const checkBox = document.getElementById("switch");
 
 scrollBar.addEventListener("input", function () {
   const value = parseFloat(scrollBar.value);
@@ -18,17 +16,20 @@ scrollBar.addEventListener("input", function () {
 });
 
 checkBox.addEventListener("input", function () {
-  const toggle = document.querySelector(".toggle");
+  // const toggle = document.querySelector(".toggle");
   const value = parseFloat(scrollBar.value);
-  const yearAmountCounter = value * 12 * 0.75;
+  const formattedValue = value === 0 ? "$0.00" : `$${value.toFixed(2)}`;
+  payment.textContent = formattedValue;
+  let yearAmountCounter = value * 12 * 0.75;
   if (checkBox.checked) {
-    toggle.style.backgroundColor = "#7aeadf";
+    // toggle.style.backgroundColor = "#7aeadf";
     switchToMonthYear.innerHTML = "/ year";
     scrollBar.setAttribute("min", 0);
     scrollBar.setAttribute("max", yearAmountCounter);
   } else {
-    toggle.style.backgroundColor = "#cfd8ef";
+    // toggle.style.backgroundColor = "#cfd8ef";
     switchToMonthYear.innerHTML = "/ month";
-    scrollBar.setAttribute;
+    scrollBar.setAttribute("min", 0);
+    scrollBar.setAttribute("max", 32);
   }
 });
