@@ -5,6 +5,6 @@ let checkBox = document.getElementById("checkbox");
 
 let actualPayement = 16;
 
-scrollBar.onclick = functiom() {
+scrollBar.addEventListener('click', functiom() {
   
-};
+});
